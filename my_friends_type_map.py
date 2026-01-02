@@ -2,7 +2,7 @@ import pandas, plotly.express
 
 data = pandas.read_csv("my_friends_type_data.csv")
 
-# I'm lowk a genius guys
+# I'm lowk a genius guys...
 threshold, step, increment, low, high = 5.5, .1, .05, 0, .5
 
 data["hRate"] = ((data["hAvg"] - threshold)/step) * increment + low
@@ -41,6 +41,7 @@ fig2.show()
 fig2.write_html("my_friends_type_heatmap_populous.html")
 
 data.to_csv("my_friends_type_results.csv", index=False)
+
 
 
 
