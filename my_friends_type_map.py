@@ -23,7 +23,7 @@ fig1 = plotly.express.choropleth(
 )
 
 fig1.show()
-fig1.write_html("friends_type_heatmap_percent.html")
+fig1.write_html("my_friends_type_heatmap_percent.html")
 
 # "Raw" numbers
 fig2 = plotly.express.choropleth(
@@ -41,5 +41,6 @@ fig2.show()
 fig2.write_html("my_friends_type_heatmap_populous.html")
 
 data.to_csv("my_friends_type_results.csv", index=False)
+
 
 
